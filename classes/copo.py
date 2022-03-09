@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
-from recipiente import Recipiente
+from classes.recipiente import Recipiente
 
 class Copo(Recipiente):
-    def __init__(self, tamanho, conteudo, limpo):
+    def __init__(self, tamanho, conteudo = 0, limpo = True):
         super().__init__(tamanho, conteudo, limpo)
 
     def encher(self, bebida = 'água'):
-        if self.esta_limpo:
+        if self.esta_limpo():
             self.sujar()
             self.conteudo = self.tamanho
             self.bebida = bebida
@@ -25,6 +25,7 @@ class Copo(Recipiente):
 
     def lavar(self):
         self.bebida = None
+        self.conteudo = 0
         self.limpo = True
         
     def __str__(self):

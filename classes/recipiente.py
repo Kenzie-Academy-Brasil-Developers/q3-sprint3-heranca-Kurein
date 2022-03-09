@@ -1,6 +1,9 @@
 class Recipiente:
     def __init__(self, tamanho: float, conteudo: float = 0, limpo: bool = True):
-        self.tamanho = tamanho
+        if tamanho < 0:
+            self.tamanho = 0
+        else:
+            self.tamanho = tamanho
         self.conteudo = conteudo
         self.limpo = limpo
 
@@ -30,4 +33,4 @@ class Recipiente:
         self.limpo = False
 
     def __str__(self):
-        return f'O recipiente esta {self.estado()}'
+        return f'Um recipiente {self.estado()} não especificado'

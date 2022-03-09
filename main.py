@@ -1,3 +1,29 @@
-if __name__ == "__main__":
-    # Execute suas testagens manuais aqui
-    ...
+from classes.copo import Copo
+from classes.recipiente import Recipiente
+
+#   r = Recipiente(100)
+#   print(r)
+#   print("esta limpo?", r.esta_limpo())
+#   print("estado =", r.estado())
+#   print("-----sujando o copo-----")
+#   r.sujar()
+#   print("esta limpo?", r.esta_limpo())
+#   print("estado =", r.estado())
+#   print("----lavando o copo-----")
+#   r.lavar()
+#   print("esta limpo?", r.esta_limpo())
+#   print("estado =", r.estado())
+
+#   c = Copo(300)
+#   print(c)
+#   c.encher("cafe")
+#   print("----enchendo de cafe---")
+#   print("bebida =", c.bebida)
+#   print(c)
+#   print("----bebendo 30mL----")
+#   c.beber(30)
+#   print(c)
+#   print("----lavando----")
+#   c.lavar()
+#   print("esta limpo?", c.esta_limpo())
+#   print(c)
