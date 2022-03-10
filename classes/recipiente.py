@@ -32,5 +32,5 @@ class Recipiente:
     def sujar(self):
         self.limpo = False
 
-    def __str__(self):
+    def __repr__(self):
         return f'Um recipiente {self.estado()} não especificado'
